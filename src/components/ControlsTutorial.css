@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap'); /* Police moderne et épurée */
+
+.controls-tutorial {
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px); /* Effet de flou */
+  color: #fff;
+  padding: 20px 30px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  transition: opacity 1s, transform 1s;
+  font-family: 'Roboto', sans-serif;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.controls-tutorial.hidden {
+  opacity: 0;
+  transform: translateY(-20px);
+}
+
+.controls-tutorial-row {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.controls-tutorial-item {
+  display: flex;
+  align-items: center;
+  margin: 5px 15px;
+}
+
+.key {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 10px;
+  margin-right: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.description {
+  font-size: 16px;
+  font-weight: 400;
+}
